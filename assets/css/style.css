@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+/* ============= GOOGLE FONT ============= */
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&display=swap");
+
+/* ============= RESET & BASE ============= */
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: "Concert One", cursive;
+  background: #000; /* Pure black – just like original Flappy Bird */
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+
+  /* Perfect centering of the entire game */
+  display: grid;
+  place-items: center;
+}
+
+/* ============= MAIN GAME CANVAS ============= */
+#canvas {
+  /* Responsive big size */
+  width: 90vw;
+  max-width: 720px; /* Increase this if you want it even bigger */
+  height: 85vh;
+  max-height: 1050px; /* Adjust together with max-width to keep ratio */
+  /* Keep pixel art sharp (important for Flappy Bird style) */
+  image-rendering: pixelated; /* Chrome/Edge */
+  image-rendering: crisp-edges; /* Firefox */
+  image-rendering: -moz-crisp-edges; /* Old Firefox */
+
+  /* Visual polish */
+  border: 10px solid #000;
+  border-radius: 16px;
+  box-shadow: 0 0 40px 10px rgba(0, 255, 136, 0.7),
+    inset 0 0 20px rgba(0, 0, 0, 0.8);
+
+  /* Optional: subtle inner glow */
+  background: #000;
+}
+
+/* ============= MOBILE OPTIMIZATIONS ============= */
+@media (max-width: 768px) {
+  #canvas {
+    width: 95vw;
+    height: 80vh;
+    max-width: 480px;
+    max-height: 780px;
+    border-width: 8px;
+    border-radius: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  #canvas {
+    width: 97vw;
+    height: 78vh;
+    border-width: 6px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px 6px rgba(0, 255, 136, 0.6);
+  }
+}
+
+/* ============= OPTIONAL: FULLSCREEN ON TAP (MOBILE) ============= */
+@media (hover: none) and (pointer: coarse) {
+  body {
+    padding: env(safe-area-inset-top) env(safe-area-inset-right)
+      env(safe-area-inset-bottom) env(safe-area-inset-left);
+  }
+}
