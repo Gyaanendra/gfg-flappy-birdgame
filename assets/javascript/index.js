@@ -355,11 +355,11 @@ gameLoop();
 // ─── ALL SOURCE SEE DOWN BELOW ──────────────────────────────────────────────────
 // TODO BRID IMGS
 playingObject.imgAnimation[0].playObjectImg.src =
-  "assets/images/brid_img/1_brid.png";
+  "assets/images/brid_img/aaa.png";
 playingObject.imgAnimation[1].playObjectImg.src =
-  "assets/images/brid_img/2_brid.png";
+  "assets/images/brid_img/aaa.png";
 playingObject.imgAnimation[2].playObjectImg.src =
-  "assets/images/brid_img/3_brid.png";
+  "assets/images/brid_img/aaa.png";
 // TODO BACKGROUND IMGS
 background.backgroundImg.src = "assets/images/ground/background.png";
 // TODO GROUND IMGS
@@ -375,13 +375,13 @@ UI.tap[1].tapImg.src = "assets/images/start&over_game_img/2_tap.png";
 // TODO AUDIO SRC
 SFX.start.src = "assets/audio/Main_sounds/start.wav";
 SFX.flap.src = "assets/audio/Main_sounds/flap.wav";
-SFX.score.src = "assets/audio/Main_sounds/score.wav";
+SFX.score.src = "assets/audio/Main_sounds/aag.mp3";
 SFX.hit.src = "assets/audio/Main_sounds/mkb_aag.mp3";
 SFX.bg.src = "assets/audio/bg_songs/f.mp3";
 
 // ? AUDIO PROPATIESF
 SFX.start.volume = 0.2;
 SFX.flap.volume = 0.2;
-SFX.score.volume = 0.2;
+SFX.score.volume = 0.4;
 SFX.hit.volume = 0.2;
 // ────────────────────────────────────────────────────────────────────────────────
