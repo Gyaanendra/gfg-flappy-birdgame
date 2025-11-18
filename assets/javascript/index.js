@@ -376,7 +376,7 @@ UI.tap[1].tapImg.src = "assets/images/start&over_game_img/2_tap.png";
 SFX.start.src = "assets/audio/Main_sounds/start.wav";
 SFX.flap.src = "assets/audio/Main_sounds/flap.wav";
 SFX.score.src = "assets/audio/Main_sounds/score.wav";
-SFX.hit.src = "assets/audio/Main_sounds/beep.mp3";
+SFX.hit.src = "assets/audio/Main_sounds/mkb_aag.mp3";
 SFX.bg.src = "assets/audio/bg_songs/f.mp3";
 
 // ? AUDIO PROPATIESF
