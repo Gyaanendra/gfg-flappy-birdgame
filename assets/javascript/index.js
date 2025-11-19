@@ -185,7 +185,7 @@ const pipe = {
   },
   pipeUpdate() {
     if (player.gameActive) {
-      if (screenFrame % 135 == 0) {
+      if (screenFrame % 140 == 0) {
         // ? AUTOPLAYING
         let ren = -210 * Math.min(Math.random() + 0.9, 1.7);
         this.pipe.push({
@@ -308,7 +308,7 @@ const UI = {
 
       localStorage.setItem("best", this.score[0].best);
     }
-    this.frames += screenFrame % 20 == 0 ? 1 : 0;
+    this.frames += screenFrame % 30 == 0 ? 1 : 0;
     this.frames = this.frames % this.tap.length;
   },
 };
@@ -376,7 +376,7 @@ UI.tap[1].tapImg.src = "assets/images/start&over_game_img/2_tap.png";
 SFX.start.src = "assets/audio/Main_sounds/start.wav";
 SFX.flap.src = "assets/audio/Main_sounds/flap.wav";
 SFX.score.src = "assets/audio/Main_sounds/aag.mp3";
-SFX.hit.src = "assets/audio/Main_sounds/mkb_aag.mp3";
+SFX.hit.src = "assets/audio/Main_sounds/sbeep.mp3";
 SFX.bg.src = "assets/audio/bg_songs/f.mp3";
 
 // ? AUDIO PROPATIESF
