@@ -170,7 +170,7 @@ const pipe = {
   topPipe: { pipeImg: new Image() },
   bottomPipe: { pipeImg: new Image() },
   pipe: [],
-  pipeGap: 85,
+  pipeGap: 90,
   move: true,
   drewPipe() {
     for (let i = 0; i < this.pipe.length; i++) {
@@ -383,5 +383,5 @@ SFX.bg.src = "assets/audio/bg_songs/f.mp3";
 SFX.start.volume = 0.2;
 SFX.flap.volume = 0.2;
 SFX.score.volume = 0.4;
-SFX.hit.volume = 0.2;
+SFX.hit.volume = 1;
 // ────────────────────────────────────────────────────────────────────────────────
